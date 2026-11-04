@@ -10,6 +10,8 @@
 - 只标记删除、不删本地文件（`svn delete --force --keep-local`），可随时 `svn revert -R` 回滚
 - 先预览后动手：`/ignore` 只设置规则，`/fix` 才移出版本控制
 
+![运行 /fix 后的效果：已被纳入版本控制的生成目录被标记为 D，本地文件保留](docs/screenshots/03-fix-mode.png)
+
 ## 它解决什么问题
 
 UE 工程编译、运行之后会生成大量构建产物和本地缓存。只要其中任何一项被 `svn add` 过，TortoiseSVN 的提交对话框里就会长期混着这些内容：
